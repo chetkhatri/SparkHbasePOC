@@ -10,10 +10,15 @@ IDE and Code Setup steps:
 5. Take Uber jar from target directory of your project for example, /home/chetan/IdeaProjects/SparkMSAPoc/target/scala-2.12/
 6. Now Spark Job Jar is ready for execution, go to /usr/local/spark where your spark is configured, give below command to execute spark job
 
-bin/spark-submit --class hbase.spark.chetan.com.SparkHbaseJob /home/chetan/hbase-spark/SparkMSAPoc-assembly-1.0.jar 
+```bin/spark-submit --class hbase.spark.chetan.com.SparkHbaseJob /home/chetan/hbase-spark/SparkMSAPoc-assembly-1.0.jar```
 
 where --class is main class of your spark job and Spark Uber Jar path.
 
-Screen 1: Spark Submit Command
+##### Screen 1: Spark Submit Command
 ![Alt text](/images/spark-submit-command.png?raw=true "Spark-Submit-Command")
+##### Screen 2: Spark UI: http://localhost:4040/jobs/
+![Alt text](/images/spark-ui-monitoring.png?raw=true "Spark-UI-Monitoring")
+##### Screen 3: Resultset Retrieved from HBase with Spark Transformation
+![Alt text](/images/Retrieved-Data-HBase-Spark.png?raw=true "HBase-Resultset-spark")
+
 
